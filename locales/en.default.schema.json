@@ -3164,6 +3164,32 @@
     "testimonials": {
       "name": "Testimonials",
       "settings": {
+        "heading": {
+          "label": "Heading"
+        }
+      },
+      "blocks": {
+        "testimonial": {
+          "name": "Testimonial",
+          "settings": {
+            "text": {
+              "label": "Text",
+              "info": "Include customer reviews and testimonials to highlight the satisfaction of your store's satisfied customers"
+            },
+            "header__1": {
+              "content": "Author"
+            },
+            "author_name": {
+              "label": "Name"
+            },
+            "author_info": {
+              "label": "Info"
+            },
+            "author_image": {
+              "label": "Image"
+            }
+          }
+        }
       },
       "presets": {
         "name": "Testimonials"
