@@ -667,25 +667,12 @@
         "name": "Contact form"
       }
     },
-    "custom-html": {
-      "name": "Custom HTML",
-      "settings": {
-        "custom_html": {
-          "label": "HTML code",
-          "info": "Add HTML code snippets or other code to create advanced customizations.",
-          "default": "<p><span>👉</span> Your JavaScript or HTML code goes here <span>👈</span></p>"
-        }
-      },
-      "presets": {
-        "name": "Custom HTML"
-      }
-    },
     "custom-liquid": {
       "name": "Custom Liquid",
       "settings": {
         "custom_liquid": {
           "label": "Liquid code",
-          "info": "Add app snippets or other code to create advanced customizations. [Learn more](https://shopify.dev/docs/api/liquid)"
+          "info": "Add app snippets, HTML or liquid code to create advanced customizations. [Learn more](https://shopify.dev/docs/api/liquid)"
         }
       },
       "presets": {
@@ -3172,6 +3159,14 @@
       },
       "presets": {
         "name": "Slideshow"
+      }
+    },
+    "testimonials": {
+      "name": "Testimonials",
+      "settings": {
+      },
+      "presets": {
+        "name": "Testimonials"
       }
     },
     "collapsible_content": {

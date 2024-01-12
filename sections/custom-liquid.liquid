@@ -1,23 +1,34 @@
+{%- liquid
+  assign section_id = section.id
+  assign liquid = section.settings.custom_liquid
+  assign color_scheme = section.settings.color_scheme
+  assign padding_top = section.settings.padding_top
+  assign padding_bottom = section.settings.padding_bottom 
+-%}
+
 {%- style -%}
-  .section-{{ section.id }}-padding {
-    padding-top: calc({{ section.settings.padding_top }}px * 0.75);
-    padding-bottom: calc({{ section.settings.padding_bottom }}px  * 0.75);
+  .section-{{ section_id }}-padding {
+    padding-top: calc({{ padding_top }}px * 0.75);
+    padding-bottom: calc({{ padding_bottom }}px  * 0.75);
   }
 
   @media screen and (min-width: 750px) {
-    .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
+    .section-{{ section_id }}-padding {
+      padding-top: {{ padding_top }}px;
+      padding-bottom: {{ padding_bottom }}px;
     }
   }
 {%- endstyle -%}
-<div class="color-{{ section.settings.color_scheme }} gradient">
-  <div class="section-{{ section.id }}-padding">
-    {{ section.settings.custom_liquid }}
-  </div>
-</div>
 
-{% schema %}
+{% if liquid != blank %}
+  <div class="color-{{ color_scheme }} gradient">
+    <div class="section-{{ section_id }}-padding">
+      {{ liquid }}
+    </div>
+  </div>
+{% endif %}
+
+{%- schema -%}
 {
   "name": "t:sections.custom-liquid.name",
   "tag": "section",
@@ -66,4 +77,4 @@
     }
   ]
 }
-{% endschema %}
+{%- endschema -%}
