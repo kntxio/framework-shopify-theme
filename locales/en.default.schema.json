@@ -667,6 +667,19 @@
         "name": "Contact form"
       }
     },
+    "custom-html": {
+      "name": "Custom HTML",
+      "settings": {
+        "custom_html": {
+          "label": "HTML code",
+          "info": "Add HTML code snippets or other code to create advanced customizations.",
+          "default": "<p><span>👉</span> Your JavaScript or HTML code goes here <span>👈</span></p>"
+        }
+      },
+      "presets": {
+        "name": "Custom HTML"
+      }
+    },
     "custom-liquid": {
       "name": "Custom Liquid",
       "settings": {
