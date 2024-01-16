@@ -679,6 +679,33 @@
         "name": "Custom Liquid"
       }
     },
+    "faqs": {
+      "name": "Frequently Asked Questions",
+      "settings": {
+        "heading": {
+          "label": "Frequently Asked Questions"
+        }
+      },
+      "blocks": {
+        "faq": {
+          "name": "Question",
+          "settings": {
+            "question": {
+              "label": "Question"
+            },
+            "answer": {
+              "label": "Answer"
+            },
+            "question_image": {
+              "label": "Image"
+            }
+          }
+        }
+      },
+      "presets": {
+        "name": "Frequently Asked Questions"
+      }
+    },
     "featured-blog": {
       "name": "Blog posts",
       "settings": {

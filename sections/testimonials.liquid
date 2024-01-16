@@ -39,7 +39,7 @@
               {%- assign author_name = block.settings.author_name -%}
               {%- assign author_info = block.settings.author_info -%}
               {%- assign author_image = block.settings.author_image -%}
-              <div class="testimonial" id="testimonial-{{ block_id }}">
+              <div class="testimonial" id="testimonial-{{ block_id }}" {{ block.shopify_attributes }}>
                 <div class="testimonial-text">{{ text }}</div>
                 <div class="testimonial-author">
                   <div class="testimonial-author-image">
