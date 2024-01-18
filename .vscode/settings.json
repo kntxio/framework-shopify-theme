@@ -11,5 +11,6 @@
   },
   "search.exclude": {
     "**/locales": true
-  }
+  },
+  "emmet.includeLanguages": { "liquid": "html" },
 }

@@ -1521,6 +1521,49 @@
         "name": "Image with text"
       }
     },
+    "marquee": {
+      "name": "Marquee",
+      "settings": {
+        "heading": {
+          "label": "Marquee"
+        }
+      },
+      "blocks": {
+        "text": {
+          "name": "Text",
+          "settings": {
+            "question": {
+              "label": "Question"
+            },
+            "answer": {
+              "label": "Answer"
+            },
+            "question_image": {
+              "label": "Image"
+            }
+          }
+        },
+        "image": {
+          "name": "Image",
+          "settings": {
+            "image": {
+              "label": "Image"
+            }
+          }
+        },
+        "testimonial": {
+          "name": "Testimonial",
+          "settings": {
+            "image": {
+              "label": "Image"
+            }
+          }
+        }
+      },
+      "presets": {
+        "name": "Marquee"
+      }
+    },
     "multirow": {
       "name": "Multirow",
       "settings": {
